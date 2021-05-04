@@ -23,5 +23,13 @@ public interface UtlisateurRepository extends JpaRepository<Utilisateur,Long> {
       @RestResource(path="/liste")
       List<Utilisateur> findByNomEquals(@Param("nom") String nomUser);
 
+/*
+ @RestResource(path="/chercher")
+    public List<Produit> findByDesignationContains(@Param("mc") String motclé);
+
+
+    @RestResource(path="/chercherPage")
+    public Page<Produit> findByDesignationContains(@Param("mc")String designation, Pageable pageable);
+ */
 
 }
