@@ -36,19 +36,19 @@ public class ProjetmetierApplication  implements CommandLineRunner {
     }*/
     @Override
     public void run(String... args) throws Exception {
-        utilisateurRep.save(new Utilisateur(null,"Ali", "ben salah",
-                "ali@bensalah.com", new Date(),
-                "sfax", "55385529","couture", "rrr",
+        utilisateurRep.save(new Utilisateur(null,"Ali", "ben salah"
+                , new Date(),"ali@bensalah.com",
+                "sfax","rue mahdia", "55385529","couture","blabla", "couture.jpeg",
                 "farfoura88",3, null, null));
 
         utilisateurRep.save(new Utilisateur(null,"Salma", "ben Ali",
-                "salma@benali.com", new Date(),
-                "sfax", "56987425","electricien","rrr",
+                new Date(),"salma@benali.com",
+                "sfax","rue saltniya", "56987425","electricien","blabla","electricien.jpg",
                 "farfoura88",3.75, null, null));
 
         utilisateurRep.save(new Utilisateur(null,"Mohamed", "Gribi",
-                "med@ghribi.com", new Date(),
-                "sfax", "25697415","maçon","rrr",
+                new Date(),"med@ghribi.com",
+                "sfax","sokra", "25697415","maçon","blabla","maçon.jpg",
                 "farfoura88",2, null, null));
 
       /*  List<Utilisateur> l1=utilisateurRep.findByMetierEquals("couture");

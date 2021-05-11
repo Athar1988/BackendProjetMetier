@@ -21,14 +21,15 @@ public class Utilisateur {
     private Long id_utilisateur;
     private String nom;
     private String prenom;
-    private String email;
     @Temporal(TemporalType.DATE)
     private Date datedenaissance;
+    private String email;
     private String ville;
+    private String adresse;
     private String numerotelephone;
     private String metier;
+    private String description;
     private String photo;
-    transient
     private String motdepasse;
     private double score ;
 
